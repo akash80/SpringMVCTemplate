@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+ 
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/template?useSSL=false&amp;autoReconnec=true</property>
+        <property name="show_sql">false</property>
+        <property name="format_sql">false</property>
+        <mapping class="co.admis.model.Organization"/>
+        <mapping class="co.admis.model.PatientData"/>
+        <mapping class="co.admis.model.Test"/>
+        <mapping class="co.admis.model.Facility"/>
+        <mapping class="co.admis.model.FacilityMedicineStock"/>
+        <mapping class="co.admis.model.Feature"/>
+        <mapping class="co.admis.model.User"/>
+        <mapping class="co.admis.model.UserPermission"/>
+        <mapping class="co.admis.model.BillFormat"/>
+        <mapping class="co.admis.model.Admin"/>
+        <mapping class="co.admis.model.Invoice"/>
+        <mapping class="co.admis.model.Login"/>
+        <mapping class="co.admis.model.PatientDocument"/>
+        <mapping class="co.admis.model.PatientTest"/>
+        <mapping class="co.admis.model.ReferredBy"/>
+        <mapping class="co.admis.model.ReportFormat"/>
+        <mapping class="co.admis.model.SampleLabel"/>
+        <mapping class="co.admis.model.UserLoginData"/>
+        <mapping class="co.admis.model.UserRole"/>
+        <mapping class="co.admis.model.Visit"/>
+        <mapping class="co.admis.model.MessageBody"/>
+        <mapping class="co.admis.model.AdminOTP"/>
+        <mapping class="co.admis.model.UserOTP"/>
+        <mapping class="co.admis.model.TestParameter"/>
+        <mapping class="co.admis.model.TestNote"/>
+        <mapping class="co.admis.model.TestComment"/>
+        <mapping class="co.admis.model.Log"/>
+        <mapping class="co.admis.model.MedicineRecord"/>
+        <mapping class="co.admis.model.MedicineStockRecord"/>
+        <mapping class="co.admis.model.MedicineSellRecord"/>
+        <mapping class="co.admis.model.MedicineInvoice"/>
+        <mapping class="co.admis.model.BMI"/>
+        <mapping class="co.admis.model.AdminPermission"/>
+    </session-factory>
+</hibernate-configuration>
